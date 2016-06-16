@@ -5,12 +5,11 @@ openstackcontroller:
     labels:
         io.rancher.scheduler.affinity:host_label: openstack=controller
         io.rancher.sidekicks: openstackinventory
-        io.rancher.container.start_once: "true"
         io.rancher.container.dns: true
     pid: host
     volumes:
         - /run:/host/run
-        - /etc/kolla
+        - /opt/kolla
         - /:/host
         - /var/run/docker.sock:/var/run/docker.sock
         - /usr/local/share/kolla
@@ -44,7 +43,6 @@ openstackcompute:
     labels:
         io.rancher.scheduler.affinity:host_label: openstack=compute
         io.rancher.scheduler.global: true
-        io.rancher.container.start_once: "true"
         io.rancher.container.dns: true
     volumes:
         - /run:/host/run
