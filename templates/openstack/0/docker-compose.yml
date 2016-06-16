@@ -9,6 +9,7 @@ openstackcontroller:
     pid: host
     volumes:
         - /run:/host/run
+        - /etc/kolla
         - /opt/kolla
         - /:/host
         - /var/run/docker.sock:/var/run/docker.sock
@@ -48,6 +49,7 @@ openstackcompute:
         - /run:/host/run
         - /:/host
         - /etc/kolla
+        - /opt/kolla
         - /var/run/docker.sock:/var/run/docker.sock
         - /usr/local/share/kolla
     stdin_open: true
