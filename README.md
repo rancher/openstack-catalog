@@ -1,6 +1,6 @@
-# Rancher Community Catalog 
+# Openstack Kolla Catalog
 
-This catalog provides templates created by the community, and they are not maintained or supported by Rancher Labs.
+This catalog provides a template to deploy Openstack using [Kolla](https://github.com/openstack/kolla)
 
 # License
 Copyright (c) 2014-2016 [Rancher Labs, Inc.](http://rancher.com)
