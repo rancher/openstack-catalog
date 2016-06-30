@@ -22,7 +22,8 @@ A good reference for additional information can be found on the [Kolla Quickstar
  * KVM enabled
  * Networking needs to be preconfigured 
  	* You will need 1 interface for the APIs and management, and one for Neutron
- * `/run` needs to be shared on the host
+ *  On OSes Rancher OS versions < v1.5.0 or Other operating systems
+    `/run` needs to be shared on the host
  	* `mount --make-shared /run` 
  	
  		-- or --
